@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>  
+
+int main() {
+    int num;
+
+    std::cout << "Введіть ціле число: ";
+    std::cin >> num;
+
+    
+    std::cout << "Парне: " << ((num % 2 == 0) ? "ТАК" : "НІ") << std::endl;
+    std::cout << "Ділиться на 8: " << ((num % 8 == 0) ? "ТАК" : "НІ") << std::endl;
+    std::cout << "Ділиться на 16: " << ((num % 16 == 0) ? "ТАК" : "НІ") << std::endl;
+
+    
+    std::cout << "Вісімковий формат: " << std::oct << num << std::endl;
+    std::cout << "Шістнадцятковий формат: " << std::hex << std::uppercase << num << std::endl;
+
+    return 0;
+}
