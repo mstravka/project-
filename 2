@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>  // для std::setprecision
+
+int main() {
+    double a, b;
+
+    std::cout << "Введіть перше число: ";
+    std::cin >> a;
+    std::cout << "Введіть друге число: ";
+    std::cin >> b;
+
+    std::cout << std::fixed << std::setprecision(12);
+
+    std::cout << "Сума: " << (a + b) << std::endl;
+    std::cout << "Різниця: " << (a - b) << std::endl;
+    std::cout << "Добуток: " << (a * b) << std::endl;
+
+    if (b != 0) {
+        std::cout << "Частка: " << (a / b) << std::endl;
+    } else {
+        std::cout << "Помилка: ділення на нуль!" << std::endl;
+    }
+
+    return 0;
+}
